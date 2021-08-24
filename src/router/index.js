@@ -9,7 +9,13 @@ const routes = [
     path: '/',
     name: '',
     component: () => import('@v/Login.vue')
+  },
+  {
+    path: '/train',
+    name: '',
+    component: () => import('@v/Train.vue')
   }
+
 ]
 
 const router = new VueRouter({

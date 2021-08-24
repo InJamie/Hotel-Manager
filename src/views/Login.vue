@@ -1,20 +1,20 @@
 <template>
-	<div>
-		<el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-		  <el-form-item label="密码" prop="pass">
+	<div class="main j-c">
+		<div class="login">
+			<el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
+		  <el-form-item label="账号" prop="pass">
+		    <el-input type="text" v-model="ruleForm.pass" autocomplete="off"></el-input>
+		  </el-form-item>
+		  <el-form-item label="密码" prop="checkPass">
 		    <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
-		  </el-form-item>
-		  <el-form-item label="确认密码" prop="checkPass">
-		    <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
-		  </el-form-item>
-		  <el-form-item label="年龄" prop="age">
-		    <el-input v-model.number="ruleForm.age"></el-input>
-		  </el-form-item>
+		  </el-form-item>	
 		  <el-form-item>
 		    <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
 		    <el-button @click="resetForm('ruleForm')">重置</el-button>
 		  </el-form-item>
 		</el-form>
+		</div>
+		
 		
 	</div>
 </template>
@@ -58,6 +58,7 @@
 	        }
 	      };
 	      return {
+			//   表单数据
 	        ruleForm: {
 	          pass: '',
 	          checkPass: '',
@@ -95,4 +96,15 @@
 </script>
 
 <style lang="scss">
+.main{
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	height: 100vh;
+	.login{
+			width: 400px;
+			height: 220px;
+			border: 1px solid #ccc;
+	}
+}
 </style>

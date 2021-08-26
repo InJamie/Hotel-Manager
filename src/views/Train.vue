@@ -21,7 +21,7 @@ export default {
     display: flex;
     // flex-direction: column-reverse;              决定容器对齐方式  左右还是上下
     // justify-content: space-around;               决定容器之间距离
-    align-items: center;                                 //垂直方向的对其方式
+    align-items:flex-end;                                 //垂直方向的对其方式
     //不给父标签高度 align-items不生效
 
 }

@@ -38,11 +38,11 @@
           pass: ''
         },
         rules: {
-          pass: [
-            { validator: validatePass, trigger: 'blur' }
-          ],
           account: [
             { validator: checkAccount, trigger: 'blur' }
+          ],
+          pass: [
+            { validator: validatePass, trigger: 'blur' }
           ]
         }
       };

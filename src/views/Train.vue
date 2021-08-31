@@ -8,6 +8,8 @@
 
 
 <script>
+const tempalte = require('./Login.vue');
+console.log(tempalte.x)
 export default {
     
 }

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
 Vue.use(VueRouter)
 
 // 路由信息数组
@@ -25,3 +24,4 @@ const router = new VueRouter({
 })
 
 export default router
+

@@ -1,4 +1,5 @@
 // 添加全局配置文件
+const { resolve } = require('path');
 const path = require('path');
 
 module.exports = {
@@ -21,7 +22,18 @@ module.exports = {
 				  '@c':path.resolve(__dirname,'src/components'),
 			  }
 		  }
-	  }
-	  
+	  },
+	//   跨域问题
+	// devServer: {
+    //     proxy: {
+    //         '/api': {
+    //             target: 'http://localhost:9528',
+    //             changeOrigin: true,
+    //             pathRewrite: {
+    //                 '/api': ''
+    //             }
+    //         }
+    //     }
+    // },
 	  
 }
